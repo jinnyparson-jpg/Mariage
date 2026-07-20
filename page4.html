@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation de Mariage - Informations</title>
+    <!-- STREAMING_CHUNK:Loading fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        /* STREAMING_CHUNK:Styling page 4 structure */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        
+        .invitation-container { width: 100%; max-width: 500px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+
+        .cote-titre { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; margin-bottom: 30px; font-weight: 500; }
+        
+        /* Conteneur avec bordure dorée identique à la page 3 */
+        .info-box { border: 1px solid #bfa36b; padding: 40px 20px; width: 100%; margin-bottom: 30px; }
+        .type-info { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #bfa36b; margin-bottom: 15px; }
+        .info-text { font-size: 15px; line-height: 1.8; color: #1a1612; margin-bottom: 20px; }
+        
+        .separateur { border-top: 1px solid #bfa36b; margin: 25px auto; width: 60%; }
+
+        /* Pagination dorée */
+        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 30px; }
+        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
+        .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
+        
+        /* Navigation */
+        .nav-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 15px; margin-bottom: 20px; }
+        .btn-navigation { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-block; }
+        
+        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; margin: 0; }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <p class="cote-titre">Informations utiles</p>
+        
+        <div class="info-box">
+            <p class="type-info">Dress Code</p>
+            <p class="info-text">Tenue chic et élégante.<br>Nous avons hâte de vous voir sur notre trente-et-un.</p>
+            
+            <div class="separateur"></div>
+            
+            <p class="type-info">Cadeaux</p>
+            <p class="info-text">Votre présence est notre plus beau cadeau. Pour ceux qui souhaitent nous gâter, une urne sera mise à votre disposition.</p>
+        </div>
+
+        <div class="pagination">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot active"></div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="page3.html" class="btn-navigation">← Précédent</a>
+        </div>
+        
+        <p class="footer-glisser">Appuyez pour continuer</p>
+    </div>
+</body>
+</html>
+```eof
