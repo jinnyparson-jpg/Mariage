@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Compte à rebours - Tsiry et Jinny</title>
+    <title>Compte à rebours</title>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
-            background: #fffdf9; 
+            background: #ffffff; 
             font-family: 'Josefin Sans', sans-serif; 
-            font-style: normal;
             color: #1a1612; 
             display: flex; 
             flex-direction: column; 
@@ -20,18 +19,17 @@
             padding: 20px;
         }
 
-        .star { color: #bfa36b; font-size: 20px; margin-bottom: 10px; }
-        .label-top { font-size: 11px; letter-spacing: 6px; color: #bfa36b; text-transform: uppercase; margin-bottom: 20px; }
+        .label-top { font-size: 11px; letter-spacing: 6px; color: #1a1612; text-transform: uppercase; margin-bottom: 20px; }
         .divider { border-top: 1px solid #bfa36b; width: 250px; margin: 15px auto; position: relative; }
         .dot { position: absolute; top: -4px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; background: #bfa36b; border-radius: 50%; }
 
         .countdown-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin: 30px 0; width: 100%; max-width: 500px; }
-        .num { font-size: 48px; font-weight: 300; line-height: 1; margin-bottom: 5px; }
-        .unit { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; }
+        .num { font-size: 48px; font-weight: 300; line-height: 1; margin-bottom: 5px; color: #1a1612; }
+        .unit { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #1a1612; }
 
-        .avant { font-size: 16px; color: #5a5650; margin: 20px 0; }
-        .names { font-family: 'Great Vibes', cursive; font-size: 52px; color: #1a1612; margin: 10px 0; }
-        .et { font-family: 'Great Vibes', cursive; font-size: 32px; color: #bfa36b; margin: 0 10px; }
+        .avant { font-size: 16px; color: #1a1612; margin: 20px 0; }
+        .names { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; margin: 10px 0; }
+        .et { font-family: 'Great Vibes', cursive; font-size: 32px; color: #1a1612; margin: 0 10px; }
 
         .footer-nav { margin-top: 50px; width: 100%; max-width: 400px; display: flex; flex-direction: column; align-items: center; gap: 20px; }
         .pagination { display: flex; gap: 8px; margin-bottom: 10px; }
@@ -46,8 +44,7 @@
 </head>
 <body>
 
-    <div class="star">✦</div>
-    <div class="label-top">Plus que</div>
+    <div class="label-top" style="margin-top: 30px;">Plus que</div>
     <div class="divider"><div class="dot"></div></div>
 
     <div class="countdown-grid">
@@ -63,7 +60,7 @@
 
     <div class="footer-nav">
         <div class="pagination">
-            <div class="page-dot"></div><div class="page-dot"></div><div class="page-dot"></div><div class="page-dot active"></div><div class="page-dot"></div><div class="page-dot"></div>
+            <div class="page-dot"></div><div class="page-dot"></div><div class="page-dot"></div><div class="page-dot active"></div><div class="page-dot"></div>
         </div>
         <div class="nav-buttons">
             <a href="page3.html" class="btn btn-prev">Précédent</a>
