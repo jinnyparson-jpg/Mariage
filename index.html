@@ -10,101 +10,36 @@
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        
-        .invitation-container {
-            width: 100%;
-            max-width: 500px;
-            padding: 40px 20px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .badge-invitation {
-            font-size: 11px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: #bfa36b;
-            border: 1px solid #bfa36b;
-            padding: 6px 20px;
-            margin-bottom: 40px;
-        }
-
+        .invitation-container { width: 100%; max-width: 500px; padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .badge-invitation { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; border: 1px solid #bfa36b; padding: 6px 20px; margin-bottom: 40px; }
         .nom { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; line-height: 1; }
         .esperluette { font-family: 'Great Vibes', cursive; font-size: 40px; color: #bfa36b; margin: 10px 0; display: block; }
-        
-        .sous-titre {
-            font-size: 13px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #bfa36b;
-            margin: 40px 0;
-        }
-
-        .texte-verset {
-            font-size: 15px;
-            line-height: 1.8;
-            color: #4a4640;
-            margin-bottom: 20px;
-            padding: 0 10px;
-        }
-
-        .reference-verset {
-            font-size: 11px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #bfa36b;
-            margin-bottom: 40px;
-        }
-
+        .sous-titre { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin: 40px 0; }
+        .texte-verset { font-size: 15px; line-height: 1.8; color: #4a4640; margin-bottom: 20px; padding: 0 10px; }
+        .reference-verset { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #bfa36b; margin-bottom: 40px; }
         .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
         .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
         .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
-
-        .btn-suivant {
-            background-color: #1a1612;
-            color: #ffffff;
-            padding: 15px 40px;
-            font-size: 12px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            border: none;
-            cursor: pointer;
-            margin-bottom: 20px;
-        }
-
-        .footer-glisser {
-            font-size: 10px;
-            letter-spacing: 3px;
-            text-transform: uppercase;
-            color: #a69f93;
-        }
+        /* Remplacement du button par un lien a pour la navigation */
+        .btn-navigation { background-color: #1a1612; color: #ffffff; padding: 15px 40px; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; text-decoration: none; display: inline-block; margin-bottom: 20px; }
+        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; }
     </style>
 </head>
 <body>
-
     <div class="invitation-container">
         <div class="badge-invitation">Invitation</div>
-        
         <h1 class="nom">Tsiry</h1>
         <span class="esperluette">&</span>
         <h1 class="nom">Jinny</h1>
-
         <p class="sous-titre">Nous vous convions à notre célébration</p>
-
-        <p class="texte-verset">
-            « L'amour est patient, l'amour est serviable. Il n'est ni envieux, ni porté à l'orgueil. Il ne se vante pas, ne se gonfle pas d'orgueil, ne fait rien d'inconvenant, ne cherche pas son intérêt, ne s'irrite pas, ne garde pas souvenir du mal... »
-        </p>
+        <p class="texte-verset">« L'amour est patient, l'amour est serviable. Il n'est ni envieux, ni porté à l'orgueil. Il ne se vante pas, ne se gonfle pas d'orgueil, ne fait rien d'inconvenant, ne cherche pas son intérêt, ne s'irrite pas, ne garde pas souvenir du mal... »</p>
         <p class="reference-verset">1 Corinthiens 13, 4-7</p>
-
         <div class="pagination">
-            <div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
+            <div class="dot active"></div><div class="dot"></div>
         </div>
-
-        <button class="btn-suivant">Suivant →</button>
-        <p class="footer-glisser">Glissez pour continuer</p>
+        <!-- LIEN VERS PAGE 2 -->
+        <a href="page2.html" class="btn-navigation">Suivant →</a>
+        <p class="footer-glisser">Appuyez pour continuer</p>
     </div>
-
 </body>
 </html>
