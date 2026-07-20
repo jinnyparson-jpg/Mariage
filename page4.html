@@ -3,57 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Informations - Mariage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <title>Invitation de Mariage - Informations</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Josefin Sans', sans-serif; background: #ffffff; color: #1a1612; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
-        .box { width: 100%; max-width: 400px; text-align: center; border: 1px solid #bfa36b; padding: 40px 20px; }
-        .title { font-size: 11px; letter-spacing: 5px; color: #bfa36b; text-transform: uppercase; margin-bottom: 30px; }
-        .info { font-size: 14px; line-height: 1.8; margin-bottom: 20px; }
-        .line { border-top: 1px solid #bfa36b; width: 60px; margin: 20px auto; }
-        .nav { display: flex; gap: 10px; justify-content: center; margin-top: 30px; }
-        .btn { background: #1a1612; color: #fff; padding: 12px 20px; text-decoration: none; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
-        .btn-outline { border: 1px solid #1a1612; color: #1a1612; background: transparent; }
-    </style>
-</head>
-<body>
-    <div class="box">
-        <p class="title">Informations</p>
-        <p class="info"><strong>Dress Code :</strong><br>Tenue chic et élégante.</p>
-        <div class="line"></div>
-        <p class="info"><strong>Cadeaux :</strong><br>Une urne sera disponible pour vous.</p>
-        <div class="nav">
-            <a href="page3.html" class="btn btn-outline">Précédent</a>
-            <a href="page5.html" class="btn">Suivant</a>
-        </div>
-    </div>
-</body>
-</html>
-```eof
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        
+        .invitation-container { width: 100%; max-width: 500px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
 
-```html:page5.html
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirmation - Mariage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Josefin Sans', sans-serif; background: #ffffff; color: #1a1612; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; margin: 0; padding: 20px; }
-        .box { width: 100%; max-width: 400px; text-align: center; border: 1px solid #bfa36b; padding: 40px 20px; }
-        .title { font-size: 11px; letter-spacing: 5px; color: #bfa36b; text-transform: uppercase; margin-bottom: 30px; }
-        .info { font-size: 14px; line-height: 1.8; margin-bottom: 30px; }
-        .btn { background: #1a1612; color: #fff; padding: 12px 20px; text-decoration: none; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; display: block; margin-bottom: 10px; }
-        .btn-outline { border: 1px solid #1a1612; color: #1a1612; background: transparent; display: inline-block; }
+        .cote-titre { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; margin-bottom: 30px; font-weight: 500; }
+        
+        .info-box { border: 1px solid #bfa36b; padding: 40px 20px; width: 100%; margin-bottom: 30px; }
+        .type-info { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #bfa36b; margin-bottom: 15px; }
+        .info-text { font-size: 15px; line-height: 1.8; color: #1a1612; margin-bottom: 20px; }
+        
+        .separateur { border-top: 1px solid #bfa36b; margin: 25px auto; width: 60%; }
+
+        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 30px; }
+        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
+        .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
+        
+        .nav-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 15px; margin-bottom: 20px; }
+        .btn-navigation { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-block; }
+        
+        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; margin: 0; }
     </style>
 </head>
 <body>
-    <div class="box">
-        <p class="title">Confirmation</p>
-        <p class="info">Merci de nous confirmer votre présence avant le 30 Juillet 2026.</p>
-        <a href="mailto:votreemail@exemple.com" class="btn">Confirmer par email</a>
-        <a href="page4.html" class="btn btn-outline">Précédent</a>
+    <div class="invitation-container">
+        <p class="cote-titre">Informations utiles</p>
+        
+        <div class="info-box">
+            <p class="type-info">Dress Code</p>
+            <p class="info-text">Tenue chic et élégante.<br>Nous avons hâte de vous voir sur notre trente-et-un.</p>
+            
+            <div class="separateur"></div>
+            
+            <p class="type-info">Cadeaux</p>
+            <p class="info-text">Votre présence est notre plus beau cadeau. Pour ceux qui souhaitent nous gâter, une urne sera mise à votre disposition.</p>
+        </div>
+
+        <div class="pagination">
+            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot active"></div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="page3.html" class="btn-navigation">← Précédent</a>
+        </div>
+        
+        <p class="footer-glisser">Appuyez pour continuer</p>
     </div>
 </body>
 </html>
