@@ -3,51 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation de Mariage - Familles</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Invitation de Mariage - Tsiry & Jinny</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        * { box-sizing: border-box; }
-        body { font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; justify-content: center; padding: 40px 20px; min-height: 100vh; }
-        .page-container { width: 100%; max-width: 500px; text-align: center; }
-        .familles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 40px; width: 100%; }
-        .cote-titre { font-size: 11px; letter-spacing: 5px; color: #bfa36b; text-transform: uppercase; margin-bottom: 20px; font-weight: 400; }
-        .nom-ligne { margin-bottom: 10px; font-size: 13px; font-weight: 400; line-height: 1.4; }
-        .invitation-texte { font-size: 13px; line-height: 1.8; color: #1a1612; margin-bottom: 30px; font-weight: 400; }
-        .noms-mariage { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; margin-top: 10px; line-height: 1; }
-        .et-mariage { font-family: 'Great Vibes', cursive; font-size: 32px; color: #1a1612; margin: 0 10px; }
-        .btn-nav { background-color: #1a1612; color: #ffffff; padding: 12px 30px; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; display: inline-block; margin: 0 5px; }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        .invitation-container { width: 100%; max-width: 500px; padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        .badge-invitation { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; border: 1px solid #bfa36b; padding: 6px 20px; margin-bottom: 40px; }
+        .nom { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; line-height: 1; }
+        .esperluette { font-family: 'Great Vibes', cursive; font-size: 40px; color: #bfa36b; margin: 10px 0; display: block; }
+        .sous-titre { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin: 40px 0; }
+        .texte-verset { font-size: 15px; line-height: 1.8; color: #4a4640; margin-bottom: 20px; padding: 0 10px; }
+        .reference-verset { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #bfa36b; margin-bottom: 40px; }
+        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
+        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
+        .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
+        .btn-nav { background-color: #1a1612; color: #ffffff; padding: 15px 40px; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; text-decoration: none; display: inline-block; margin-bottom: 20px; }
+        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; }
     </style>
 </head>
 <body>
-<div class="page-container">
-    <div class="familles-grid">
-        <div class="famille-col">
-            <p class="cote-titre">Côté Marié</p>
-            <div class="nom-ligne">RAVELONARIVO Ratsihosena Frédeline</div>
-            <div class="nom-ligne">RAHARIMINO Honorine</div>
-            <div class="nom-ligne">RANDRIANANTENAINA Fanomezantsoa Ranarivelo</div>
-            <div class="nom-ligne">ANDRY NASOLO Harimino</div>
+    <div class="invitation-container">
+        <div class="badge-invitation">Invitation</div>
+        <h1 class="nom">Tsiry</h1>
+        <span class="esperluette">&</span>
+        <h1 class="nom">Jinny</h1>
+        <p class="sous-titre">Nous vous convions à notre célébration</p>
+        <p class="texte-verset">« L'amour est patient, l'amour est serviable. Il n'est ni envieux, ni porté à l'orgueil. Il ne se vante pas, ne se gonfle pas d'orgueil, ne fait rien d'inconvenant, ne cherche pas son intérêt, ne s'irrite pas, ne garde pas souvenir du mal... »</p>
+        <p class="reference-verset">1 Corinthiens 13, 4-7</p>
+        <div class="pagination">
+            <div class="dot active"></div><div class="dot"></div>
         </div>
-        <div class="famille-col">
-            <p class="cote-titre">Côté Mariée</p>
-            <div class="nom-ligne">RAVOLOLOMANANA Lalanirina</div>
-            <div class="nom-ligne">RAMANANTANY Jean</div>
-            <div class="nom-ligne">RAVAONANDRASANA Pierette</div>
-            <div class="nom-ligne">NIRINA Harinjaka Parson</div>
-            <div class="nom-ligne">RASOAZANAMANANA Sidonie</div>
-        </div>
+        <a href="page2.html" class="btn-nav">Suivant →</a>
+        <p class="footer-glisser">Appuyez pour continuer</p>
     </div>
-    <p class="invitation-texte">Ont l'honneur de vous inviter à la bénédiction par le mariage religieux de leurs enfants et petits-enfants,</p>
-    <div class="noms-mariage">Tsiry <span class="et-mariage">et</span> Jinny</div>
-    <div class="flex gap-2 justify-center mt-10 mb-8">
-        <div class="w-2 h-2 rounded-full bg-[#d1d1d1]"></div>
-        <div class="w-2 h-2 rounded-full bg-[#bfa36b]"></div>
-    </div>
-    <div>
-        <!-- LIEN VERS INDEX -->
-        <a href="index.html" class="btn-nav">← Précédent</a>
-    </div>
-</div>
 </body>
 </html>
+```eof
+
+```html:page2.html
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation de Mariage - Familles</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        .invitation-container { width: 100%; max-width: 500px; padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
+        
+        .familles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; width: 100%; }
+        .cote-titre { font-size: 11px; letter-spacing: 5px; color: #bfa36b; text-transform: uppercase; margin-bottom: 20px; }
+        .nom-ligne { margin-bottom: 8px; font-size: 13px; color: #1a1612; }
+        
+        .invitation-texte { font-size: 14px; line-height: 1.6; color: #1a1612; margin-bottom: 30px; padding: 0 10px; }
+        .noms-mariage { font-family: 'Great Vibes', cursive; font-size: 42px; color: #bfa36b; margin-top: 10px; }
+        
+        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
+        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
+        .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
+        
+        .nav-group { display: flex; gap: 10px; margin-bottom: 20px; }
+        .btn-nav { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; display: inline-block; }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <div class="familles-grid">
+            <div class="famille-col">
+                <p class="cote-titre">Côté Marié</p>
+                <div class="nom-ligne">Ratsihosena Frédeline</div>
+                <div class="nom-ligne">Honorine</div>
+                <div class="nom-ligne">Fanomezantsoa Ranarivelo</div>
+                <div class="nom-ligne">Harimino</div>
+            </div>
+            <div class="famille-col">
+                <p class="cote-titre">Côté Mariée</p>
+                <div class="nom-ligne">Lalanirina</div>
+                <div class="nom-ligne">Jean</div>
+                <div class="nom-ligne">Pierette</div>
+                <div class="nom-ligne">Harinjaka Parson</div>
+                <div class="nom-ligne">Sidonie</div>
+            </div>
+        </div>
+        <p class="invitation-texte">Ont l'honneur de vous inviter à la bénédiction par le mariage religieux de leurs enfants et petits-enfants,</p>
+        <div class="noms-mariage">Tsiry & Jinny</div>
+        <div class="pagination" style="margin-top:40px;">
+            <div class="dot"></div><div class="dot active"></div>
+        </div>
+        <div class="nav-group">
+            <a href="index.html" class="btn-nav">← Précédent</a>
+            <a href="#" class="btn-nav">Suivant →</a>
+        </div>
+    </div>
+</body>
+</html>
+```eof
