@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dernière Page - Tsiry & Jinny</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { 
@@ -18,10 +18,26 @@
             padding: 40px 20px;
         }
 
-        .names { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; margin-bottom: 10px; text-align: center; }
-        .presence-text { font-size: 16px; margin-bottom: 30px; text-align: center; font-style: italic; }
+        .noms { 
+            font-family: 'Great Vibes', cursive; 
+            font-size: 52px; 
+            color: #bfa36b; 
+            margin-bottom: 20px; 
+            text-align: center; 
+            font-weight: 400;
+        }
+        
+        .presence-text { 
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px; 
+            margin-bottom: 40px; 
+            text-align: center; 
+            color: #5a5650;
+            font-weight: 400;
+            font-style: normal;
+        }
 
-        .main-box { 
+        .info-box { 
             border: 1px solid #bfa36b; 
             padding: 40px 20px; 
             width: 100%; 
@@ -30,28 +46,75 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
+            margin-bottom: 30px;
         }
         
-        .message { font-size: 14px; line-height: 1.6; margin-bottom: 20px; text-align: center; }
-        .deadline { font-size: 20px; color: #bfa36b; margin-top: 10px; margin-bottom: 25px; text-align: center; }
-        .phone { font-size: 16px; margin: 5px 0; color: #1a1612; text-align: center; }
-        .divider { border-top: 1px solid #bfa36b; width: 100px; margin: 15px auto; }
-        .closing { font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin-top: 30px; text-align: center; }
+        .message { 
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 15px; 
+            line-height: 1.6; 
+            margin-bottom: 25px; 
+            font-weight: 400;
+            font-style: normal;
+        }
         
-        .nav-buttons { margin-top: 40px; width: 100%; display: flex; justify-content: center; }
-        .btn { padding: 15px 30px; border: 1px solid #1a1612; text-decoration: none; color: #1a1612; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+        .deadline { 
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 24px; 
+            color: #bfa36b; 
+            margin-bottom: 25px; 
+            font-weight: 500;
+        }
+
+        .divider { border-top: 1px solid #bfa36b; width: 150px; margin: 20px auto; position: relative; }
+        .dot { position: absolute; top: -4px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; background: #bfa36b; border-radius: 50%; }
+
+        .phone { 
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 16px; 
+            margin: 8px 0; 
+            color: #bfa36b; 
+            font-weight: 500;
+        }
+
+        .closing { 
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 11px; 
+            letter-spacing: 4px; 
+            text-transform: uppercase; 
+            color: #bfa36b; 
+            margin-top: 20px; 
+            margin-bottom: 40px;
+            font-weight: 400;
+        }
+
+        .nav-buttons { display: flex; width: 100%; justify-content: center; margin-bottom: 40px; }
+        .btn { 
+            padding: 15px 30px; 
+            border: 1px solid #1a1612; 
+            text-decoration: none; 
+            color: #1a1612; 
+            font-size: 10px; 
+            letter-spacing: 2px; 
+            text-transform: uppercase; 
+            background: transparent;
+            font-family: 'Josefin Sans', sans-serif;
+        }
     </style>
 </head>
 <body>
 
-    <div class="names">Tsiry & Jinny</div>
+    <div class="noms">Tsiry & Jinny</div>
     
     <p class="presence-text">Nous comptons sur votre présence</p>
 
-    <div class="main-box">
-        <p class="message">Si vous ne pouvez malheureusement pas être présent(e), merci de nous en informer avant le</p>
+    <div class="info-box">
+        <p class="message">Si vous ne pouvez malheureusement pas être présent(e),<br>merci de nous en informer avant le</p>
         <div class="deadline">30 Juillet 2026</div>
-        <div class="divider"></div>
+        
+        <div class="divider"><div class="dot"></div></div>
+        
         <div class="phone">+261 32 68 894 72</div>
         <div class="phone">+261 38 82 678 11</div>
     </div>
