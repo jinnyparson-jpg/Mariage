@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation de Mariage</title>
+    
+    <!-- 1. IMPORTATION DES POLICES (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    
+    <!-- 2. CONFIGURATION DES STYLES GENERAUX -->
+    <style>
+        /* On réinitialise les marges par défaut des navigateurs */
+        *, *::before, *::after { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+        /* On configure les couleurs de base et la police par défaut de tout le site */
+        body {
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: #FDFCF8; /* Un blanc crème très doux */
+            color: #1A1612; /* Un texte presque noir mais adouci */
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Style spécifique pour vos grands titres romantiques */
+        .titre-romantique {
+            font-family: 'Great Vibes', cursive;
+            font-size: 60px;
+            text-transform: none; /* On garde le texte écrit en minuscules comme vous le souhaitez */
+            color: #9B7B2A; /* Une jolie couleur or profond */
+            -webkit-text-stroke: 1.5px #9B7B2A; /* Un contour léger pour donner du relief */
+            text-stroke: 1.5px #9B7B2A;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 3. VOTRE PREMIER ESSAI DE TEXTE -->
+    <h1 class="titre-romantique">Tsiry & Jinny</h1>
+    <p style="margin-top: 20px; font-size: 18px; letter-spacing: 2px;">BIENVENUE SUR NOTRE INVITATION</p>
+
+</body>
+</html>
