@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ce qu'il faut préparer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        /* STREAMING_CHUNK:Initializing base styles */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background: #ffffff; 
+            font-family: 'Josefin Sans', sans-serif; 
+            color: #1a1612; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 40px 20px;
+        }
+
+        .header { text-align: center; margin-bottom: 50px; }
+        .title { font-size: 14px; letter-spacing: 6px; text-transform: uppercase; margin-bottom: 20px; }
+        .divider { border-top: 1px solid #bfa36b; width: 200px; margin: 0 auto; }
+
+        /* STREAMING_CHUNK:Styling grid with golden border */
+        .container-box { 
+            width: 100%; 
+            max-width: 800px; 
+            border: 1px solid #bfa36b; 
+            padding: 50px 20px; 
+            display: grid; 
+            grid-template-columns: repeat(3, 1fr); 
+        }
+        .item { text-align: center; border-right: 1px solid #e0e0e0; padding: 0 10px; }
+        .item:last-child { border-right: none; }
+        
+        /* STREAMING_CHUNK:Styling text without italics */
+        .label { font-size: 12px; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 15px; color: #1a1612; font-weight: 400; }
+        .sub { font-size: 14px; font-style: normal; color: #5a5650; }
+
+        /* STREAMING_CHUNK:Styling navigation */
+        .nav-buttons { margin-top: 50px; display: flex; gap: 20px; }
+        .btn { padding: 15px 30px; border: 1px solid #1a1612; text-decoration: none; color: #1a1612; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; }
+        .btn-next { background: #1a1612; color: #ffffff; }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="title">Ce qu'il faut préparer</div>
+        <div class="divider"></div>
+    </div>
+
+    <div class="container-box">
+        <div class="item">
+            <div class="label">Votre estomac</div>
+            <div class="sub">Car il y aura à manger</div>
+        </div>
+        <div class="item">
+            <div class="label">Votre corps</div>
+            <div class="sub">Car il faudra danser</div>
+        </div>
+        <div class="item">
+            <div class="label">Votre joie de vivre</div>
+            <div class="sub">Car nous allons célébrer</div>
+        </div>
+    </div>
+
+    <div class="nav-buttons">
+        <a href="page4.html" class="btn">← Précédent</a>
+        <a href="page6.html" class="btn btn-next">Suivant →</a>
+    </div>
+
+</body>
+</html>
