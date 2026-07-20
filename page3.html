@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation de Mariage - Au Programme</title>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        
+        .invitation-container { 
+            width: 100%; max-width: 500px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center;
+            opacity: 1; transition: opacity 0.6s ease-in-out;
+        }
+
+        .cote-titre { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; margin-bottom: 30px; font-weight: 500; }
+        
+        .programme-box { border: 1px solid #e5e5e5; padding: 40px 20px; width: 100%; margin-bottom: 30px; }
+        .type-event { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #bfa36b; margin-bottom: 15px; }
+        .date-text { font-size: 28px; color: #1a1612; margin-bottom: 20px; }
+        .lieu-text { font-size: 14px; color: #bfa36b; font-weight: 500; margin-bottom: 5px; }
+        .heure-text { font-size: 14px; color: #5a5650; margin-bottom: 25px; }
+        .separateur { border-top: 1px solid #e5e5e5; margin: 25px auto; width: 80%; }
+
+        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 30px; }
+        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
+        .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
+        
+        .nav-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 15px; margin-bottom: 20px; }
+        .btn-navigation { 
+            background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 10px; letter-spacing: 2px; 
+            text-transform: uppercase; text-decoration: none; display: inline-block; transition: background 0.3s ease;
+        }
+        .btn-navigation:hover { background-color: #4a4640; }
+        
+        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; margin: 0; }
+    </style>
+</head>
+<body>
+    <div class="invitation-container">
+        <p class="cote-titre">Au programme</p>
+        
+        <div class="programme-box">
+            <p class="type-event">La bénédiction</p>
+            <h2 class="date-text">Vendredi 21 Août 2026</h2>
+            <p class="lieu-text">FJKM Androndra Fahasoavana</p>
+            <p class="heure-text">à 10h00</p>
+            
+            <div class="separateur"></div>
+            
+            <p class="type-event">La réception</p>
+            <p class="lieu-text">Anthurium Espace</p>
+            <p class="heure-text">à 12h30</p>
+        </div>
+
+        <div class="pagination">
+            <div class="dot"></div><div class="dot"></div><div class="dot active"></div>
+        </div>
+        
+        <div class="nav-buttons">
+            <a href="page2.html" class="btn-navigation">← Précédent</a>
+        </div>
+        
+        <p class="footer-glisser">Appuyez pour continuer</p>
+    </div>
+</body>
+</html>
