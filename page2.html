@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* STREAMING_CHUNK: Configuration du conteneur pleine page */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body, html { 
             height: 100%; 
@@ -21,7 +20,6 @@
             justify-content: center; 
             min-height: 100vh; 
         }
-        /* Augmentation du max-width pour agrandir visuellement le contenu */
         .invitation-container { 
             width: 90%; 
             max-width: 650px; 
@@ -32,17 +30,25 @@
             align-items: center; 
         }
 
-        /* STREAMING_CHUNK: Grille élargie */
         .familles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-bottom: 50px; width: 100%; }
-        .cote-titre { font-size: 13px; letter-spacing: 6px; text-transform: uppercase; color: #bfa36b; margin-bottom: 30px; }
+        
+        /* Harmonisation des titres Côté Marié/Mariée avec le sous-titre */
+        .cote-titre { 
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 13px; 
+            letter-spacing: 3px; 
+            text-transform: uppercase; 
+            color: #bfa36b; 
+            margin-bottom: 30px; 
+            font-weight: 500;
+        }
+        
         .nom-ligne { font-size: 15px; font-weight: 400; line-height: 1.8; margin-bottom: 15px; color: #1a1612; }
 
-        /* STREAMING_CHUNK: Typographie agrandie pour un meilleur impact */
         .invitation-texte { font-size: 17px; line-height: 1.8; color: #4a4640; margin-bottom: 40px; padding: 0 20px; }
         .noms-mariage { font-family: 'Great Vibes', cursive; font-size: 64px; color: #bfa36b; line-height: 1; margin: 30px 0; }
         .et-mariage { font-family: 'Great Vibes', cursive; font-size: 48px; color: #bfa36b; margin: 0 15px; }
 
-        /* STREAMING_CHUNK: Éléments de navigation centrés */
         .pagination { display: flex; justify-content: center; gap: 12px; margin-bottom: 50px; }
         .dot { width: 8px; height: 8px; background-color: #dcd6c6; border-radius: 50%; }
         .dot.active { width: 30px; background-color: #bfa36b; border-radius: 6px; }
@@ -51,7 +57,6 @@
 </head>
 <body>
     <div class="invitation-container">
-        <!-- STREAMING_CHUNK: Contenu principal centré -->
         <div class="familles-grid">
             <div class="famille-col">
                 <p class="cote-titre">Côté Marié</p>
