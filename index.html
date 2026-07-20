@@ -9,54 +9,102 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; font-weight: 400; background-color: #ffffff; color: #1a1612; overflow-x: hidden; }
-        .couverture-container { position: relative; min-height: 100vh; width: 100%; display: flex; flex-direction: column; align-items: center; justify-content: space-between; padding: 50px 24px 40px 24px; text-align: center; background-color: #ffffff; }
-        .contenu-principal { width: 100%; display: flex; flex-direction: column; align-items: center; }
-        .badge-invitation { font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; border: 1px solid #bfa36b; padding: 6px 25px; display: inline-block; margin: 0 auto; }
-        .bloc-noms { display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 25px 0; }
-        .nom { font-family: 'Great Vibes', cursive; font-size: 46px; font-weight: 400; color: #bfa36b; line-height: 1.2; letter-spacing: 1px; -webkit-text-stroke: 2px #bfa36b; text-stroke: 2px #bfa36b; text-transform: none; }
-        .esperluette { font-family: 'Great Vibes', cursive; font-size: 38px; color: #bfa36b; margin: -5px 0; display: block; -webkit-text-stroke: 2px #bfa36b; text-stroke: 2px #bfa36b; }
-        .bloc-details { width: 100%; max-width: 460px; display: flex; flex-direction: column; align-items: center; }
-        .sous-titre { font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin-bottom: 25px; }
-        .bloc-verset { width: 100%; padding: 0 15px; border: none; }
-        .texte-verset { font-family: 'Josefin Sans', sans-serif; font-weight: 300; font-style: normal; font-size: 15px; line-height: 1.6; color: #4a4640; text-align: center; }
-        .reference-verset { font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-style: normal; font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #bfa36b; margin-top: 14px; text-align: center; }
-        .navigation-container { display: flex; flex-direction: column; align-items: center; width: 100%; margin-top: 45px; }
-        .pagination-dots { display: flex; justify-content: center; gap: 8px; margin-bottom: 20px; }
-        .dot { width: 6px; height: 6px; background-color: #e5dec9; border-radius: 50%; }
+        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
+        
+        .invitation-container {
+            width: 100%;
+            max-width: 500px;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .badge-invitation {
+            font-size: 11px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #bfa36b;
+            border: 1px solid #bfa36b;
+            padding: 6px 20px;
+            margin-bottom: 40px;
+        }
+
+        .nom { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; line-height: 1; }
+        .esperluette { font-family: 'Great Vibes', cursive; font-size: 40px; color: #bfa36b; margin: 10px 0; display: block; }
+        
+        .sous-titre {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #bfa36b;
+            margin: 40px 0;
+        }
+
+        .texte-verset {
+            font-size: 15px;
+            line-height: 1.8;
+            color: #4a4640;
+            margin-bottom: 20px;
+            padding: 0 10px;
+        }
+
+        .reference-verset {
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #bfa36b;
+            margin-bottom: 40px;
+        }
+
+        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
+        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
         .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
-        .btn-suivant { background-color: #1a1612; color: #ffffff; border: none; font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; padding: 15px 45px; cursor: pointer; display: inline-flex; align-items: center; gap: 15px; transition: all 0.3s ease; }
-        .btn-suivant:hover { background-color: #bfa36b; }
-        .footer-glisser { font-family: 'Josefin Sans', sans-serif; font-weight: 400; font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; margin-top: 25px; }
+
+        .btn-suivant {
+            background-color: #1a1612;
+            color: #ffffff;
+            padding: 15px 40px;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .footer-glisser {
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #a69f93;
+        }
     </style>
 </head>
 <body>
-    <div class="couverture-container">
-        <div class="contenu-principal">
-            <div class="badge-invitation">Invitation</div>
-            <div class="bloc-noms">
-                <h1 class="nom">Tsiry</h1>
-                <span class="esperluette">&</span>
-                <h1 class="nom">Jinny</h1>
-            </div>
-            <div class="bloc-details">
-                <p class="sous-titre">Nous vous convions à notre célébration</p>
-                <div class="bloc-verset">
-                    <p class="texte-verset">« L'amour est patient, l'amour est serviable. Il n'est ni envieux, ni porté à l'orgueil. Il ne se vante pas, ne se gonfle pas d'orgueil, ne fait rien d'inconvenant, ne cherche pas son intérêt, ne s'irrite pas, ne garde pas souvenir du mal... »</p>
-                    <p class="reference-verset">1 Corinthiens 13, 4-7</p>
-                </div>
-            </div>
+
+    <div class="invitation-container">
+        <div class="badge-invitation">Invitation</div>
+        
+        <h1 class="nom">Tsiry</h1>
+        <span class="esperluette">&</span>
+        <h1 class="nom">Jinny</h1>
+
+        <p class="sous-titre">Nous vous convions à notre célébration</p>
+
+        <p class="texte-verset">
+            « L'amour est patient, l'amour est serviable. Il n'est ni envieux, ni porté à l'orgueil. Il ne se vante pas, ne se gonfle pas d'orgueil, ne fait rien d'inconvenant, ne cherche pas son intérêt, ne s'irrite pas, ne garde pas souvenir du mal... »
+        </p>
+        <p class="reference-verset">1 Corinthiens 13, 4-7</p>
+
+        <div class="pagination">
+            <div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
         </div>
-        <div class="navigation-container">
-            <div class="pagination-dots">
-                <div class="dot active"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-            </div>
-            <button class="btn-suivant">Suivant <span>→</span></button>
-            <p class="footer-glisser">Glissez pour continuer</p>
-        </div>
+
+        <button class="btn-suivant">Suivant →</button>
+        <p class="footer-glisser">Glissez pour continuer</p>
     </div>
+
 </body>
 </html>
-```eof
-
-Si vous ne voyez toujours pas de bouton "Copier", essayez de sélectionner tout le texte manuellement avec votre souris, faites un clic droit > Copier, puis collez-le directement dans votre éditeur GitHub.
