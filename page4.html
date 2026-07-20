@@ -3,65 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invitation de Mariage - Informations</title>
-    <!-- Chargement des polices -->
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Informations - Mariage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        /* Reset et style global */
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        
-        .invitation-container { width: 100%; max-width: 500px; padding: 20px; text-align: center; display: flex; flex-direction: column; align-items: center; opacity: 1; transition: opacity 0.5s ease; }
-
-        .cote-titre { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; margin-bottom: 30px; font-weight: 500; }
-        
-        /* Conteneur avec bordure dorée */
-        .info-box { border: 1px solid #bfa36b; padding: 40px 20px; width: 100%; margin-bottom: 30px; }
-        .type-info { font-size: 10px; letter-spacing: 4px; text-transform: uppercase; color: #bfa36b; margin-bottom: 15px; }
-        .info-text { font-size: 15px; line-height: 1.8; color: #1a1612; margin-bottom: 20px; }
-        
-        /* Séparateur doré */
-        .separateur { border-top: 1px solid #bfa36b; margin: 25px auto; width: 60%; }
-
-        /* Pagination */
-        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 30px; }
-        .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
-        .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
-        
-        /* Navigation */
-        .nav-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 15px; margin-bottom: 20px; }
-        .btn-navigation { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-block; }
-        .btn-prev { background-color: #ffffff; color: #1a1612; border: 1px solid #1a1612; padding: 15px 25px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-block; }
-        
-        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; margin: 0; }
+        body { font-family: 'Josefin Sans', sans-serif; background: #fff; color: #1a1612; display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0; padding: 20px; }
+        .box { width: 100%; max-width: 400px; text-align: center; border: 1px solid #bfa36b; padding: 30px; }
+        .title { font-size: 11px; letter-spacing: 5px; color: #bfa36b; margin-bottom: 20px; text-transform: uppercase; }
+        .info { font-size: 14px; line-height: 1.6; margin-bottom: 20px; }
+        .line { border-top: 1px solid #bfa36b; width: 50px; margin: 20px auto; }
+        .nav { margin-top: 20px; }
+        .btn { background: #1a1612; color: #fff; padding: 10px 20px; text-decoration: none; font-size: 10px; letter-spacing: 2px; }
     </style>
 </head>
 <body>
-    <div class="invitation-container">
-        <p class="cote-titre">Informations utiles</p>
-        
-        <div class="info-box">
-            <p class="type-info">Dress Code</p>
-            <p class="info-text">Tenue chic et élégante.<br>Nous avons hâte de vous voir sur notre trente-et-un.</p>
-            
-            <div class="separateur"></div>
-            
-            <p class="type-info">Cadeaux</p>
-            <p class="info-text">Votre présence est notre plus beau cadeau. Pour ceux qui souhaitent nous gâter, une urne sera mise à votre disposition.</p>
+    <div class="box">
+        <p class="title">Informations</p>
+        <p class="info"><strong>Dress Code :</strong><br>Tenue chic et élégante.</p>
+        <div class="line"></div>
+        <p class="info"><strong>Cadeaux :</strong><br>Une urne sera disponible pour vous.</p>
+        <div class="nav">
+            <a href="page3.html" class="btn">RETOUR</a>
         </div>
-
-        <div class="pagination">
-            <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot active"></div>
-        </div>
-        
-        <div class="nav-buttons">
-            <a href="page3.html" class="btn-prev">← Précédent</a>
-        </div>
-        
-        <p class="footer-glisser">Appuyez pour continuer</p>
     </div>
 </body>
 </html>
 ```eof
 
-J'ai optimisé les styles pour que la page 4 soit identique en termes de design aux pages précédentes. N'hésitez pas à me demander si vous souhaitez changer le contenu de cette page !
+Si ce code ne s'affiche toujours pas, il est fort probable qu'il y ait un problème de cache dans l'aperçu. N'hésitez pas à rafraîchir ou à essayer de charger une autre page pour voir si le problème persiste.
