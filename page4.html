@@ -10,7 +10,7 @@
 </html>
 ```eof
 
-### Mise à jour de `page5.html` (Confirmation)
+### Création de `page5.html` (Confirmation de présence)
 
 ```html:page5.html
 <!DOCTYPE html>
@@ -19,10 +19,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitation de Mariage - Confirmation</title>
-    <!-- STREAMING_CHUNK:Loading fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
-        /* STREAMING_CHUNK:Styling page 5 */
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
         body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
         
@@ -30,9 +28,8 @@
 
         .cote-titre { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; margin-bottom: 30px; font-weight: 500; }
         .info-box { border: 1px solid #bfa36b; padding: 40px 20px; width: 100%; margin-bottom: 30px; }
-        .info-text { font-size: 15px; line-height: 1.8; color: #1a1612; margin-bottom: 25px; }
+        .info-text { font-size: 15px; line-height: 1.8; margin-bottom: 20px; }
         
-        .nav-buttons { display: flex; gap: 10px; justify-content: center; margin-top: 15px; }
         .btn-navigation { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-decoration: none; display: inline-block; }
     </style>
 </head>
@@ -43,7 +40,6 @@
             <p class="info-text">Merci de nous confirmer votre présence avant le 30 Juillet 2026.</p>
             <a href="mailto:votreemail@exemple.com" class="btn-navigation">Confirmer par email</a>
         </div>
-        
         <div class="nav-buttons">
             <a href="page4.html" class="btn-navigation">← Précédent</a>
         </div>
@@ -52,4 +48,4 @@
 </html>
 ```eof
 
-Désormais, le bouton "Suivant" est actif sur la page 4 et vous dirige vers la page de confirmation !
+Désormais, vos pages sont reliées de manière séquentielle !
