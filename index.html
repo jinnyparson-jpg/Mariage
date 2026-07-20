@@ -56,7 +56,7 @@
 
         /* Zone des prénoms équilibrée selon les règles typographiques */
         .bloc-noms {
-            margin: 15px 0;
+            margin: 15px 0 25px 0; /* Un peu d'espace en bas puisqu'il n'y a plus la ligne */
         }
 
         .nom {
@@ -79,24 +79,6 @@
             display: block;
             -webkit-text-stroke: 2px #bfa36b;
             text-stroke: 2px #bfa36b;
-        }
-
-        /* Ligne de transition dorée avec le petit point */
-        .separation-doree {
-            width: 120px;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #bfa36b, transparent);
-            margin: 20px auto;
-            position: relative;
-        }
-        .separation-doree::after {
-            content: "♦";
-            position: absolute;
-            top: -7px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: #bfa36b;
-            font-size: 8px;
         }
 
         /* Sous-titre */
@@ -210,7 +192,6 @@
                 <h1 class="nom">Jinny</h1>
             </div>
             
-            <div class="separation-doree"></div>
             <p class="sous-titre">Nous vous convions à notre célébration</p>
             
             <!-- Le Verset Biblique Net, Centré, Droit, sans barre -->
