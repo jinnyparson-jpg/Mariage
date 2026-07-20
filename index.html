@@ -21,13 +21,13 @@
         body, html {
             height: 100%;
             font-family: 'Josefin Sans', sans-serif;
-            font-weight: 400; /* Regular pour tout le site par défaut */
-            background-color: #fdfcf8;
+            font-weight: 400;
+            background-color: #ffffff; /* Fond blanc pur */
             color: #1a1612;
             overflow-x: hidden;
         }
 
-        /* Conteneur principal centré */
+        /* Conteneur principal centré avec fond blanc */
         .couverture-container {
             position: relative;
             min-height: 100vh;
@@ -38,11 +38,7 @@
             justify-content: space-between;
             padding: 40px 20px 30px 20px;
             text-align: center;
-            
-            /* Fond avec voile blanc adouci */
-            background: linear-gradient(rgba(253, 252, 248, 0.85), rgba(253, 252, 248, 0.85)), 
-                        url('https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=1000') no-repeat center center;
-            background-size: cover;
+            background-color: #ffffff; /* Assure le fond blanc sur tout le bloc */
         }
 
         /* Petit badge "INVITATION" tout en haut */
@@ -67,12 +63,12 @@
             font-family: 'Great Vibes', cursive;
             font-size: 68px;
             font-weight: 400;
-            color: #bfa36b; /* Couleur dorée pour le remplissage */
+            color: #bfa36b;
             line-height: 1.1;
             letter-spacing: 1px;
-            -webkit-text-stroke: 2px #bfa36b; /* Contour doré de 2px */
+            -webkit-text-stroke: 2px #bfa36b;
             text-stroke: 2px #bfa36b;
-            text-transform: none; /* Conserve vos minuscules/majuscules d'origine */
+            text-transform: none;
         }
 
         .esperluette {
@@ -81,7 +77,7 @@
             color: #bfa36b;
             margin: -10px 0;
             display: block;
-            -webkit-text-stroke: 2px #bfa36b; /* Contour doré de 2px */
+            -webkit-text-stroke: 2px #bfa36b;
             text-stroke: 2px #bfa36b;
         }
 
