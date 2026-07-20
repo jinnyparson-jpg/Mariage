@@ -6,41 +6,32 @@
     <title>Dress Code</title>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        /* STREAMING_CHUNK:Initializing global styles */
+        /* STREAMING_CHUNK:Initializing styles */
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { 
-            background: #ffffff; 
-            font-family: 'Josefin Sans', sans-serif; 
-            color: #1a1612; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            min-height: 100vh; 
-            padding: 40px 20px;
-        }
+        body { background: #ffffff; font-family: 'Josefin Sans', sans-serif; color: #1a1612; display: flex; flex-direction: column; align-items: center; min-height: 100vh; padding: 40px 20px; }
 
-        /* STREAMING_CHUNK:Styling header elements */
+        /* STREAMING_CHUNK:Header and Divider */
         .title { font-size: 11px; letter-spacing: 6px; color: #1a1612; text-transform: uppercase; margin-top: 40px; margin-bottom: 20px; }
         .divider { border-top: 1px solid #bfa36b; width: 250px; margin: 15px auto; position: relative; }
         .dot { position: absolute; top: -4px; left: 50%; transform: translateX(-50%); width: 5px; height: 5px; background: #bfa36b; border-radius: 50%; }
 
-        /* STREAMING_CHUNK:Content styling */
-        .message { font-size: 18px; color: #1a1612; text-align: center; margin: 30px 0; max-width: 400px; }
-        .avoid-box { 
-            border: 1px solid #e5e5e5; 
-            padding: 20px 40px; 
-            margin: 30px 0; 
-            text-align: center; 
-        }
-        .avoid-title { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin-bottom: 10px; }
-        .avoid-color { font-size: 16px; color: #d946ef; letter-spacing: 2px; }
+        /* STREAMING_CHUNK:Content blocks */
+        .content-wrapper { text-align: center; max-width: 450px; margin: 30px 0; }
+        .message { font-size: 16px; line-height: 1.6; color: #1a1612; margin-bottom: 25px; }
+        
+        /* Rappel visuel de la page 6 */
+        .link-visual { border: 1px solid #e5e5e5; padding: 15px; margin-bottom: 30px; background: #fcfaf8; font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: #a69f93; }
+        
+        .avoid-box { border: 1px solid #bfa36b; padding: 25px; text-align: center; }
+        .avoid-title { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin-bottom: 12px; }
+        .avoid-color { font-size: 18px; color: #d946ef; letter-spacing: 4px; font-weight: 300; }
 
-        /* STREAMING_CHUNK:Navigation and footer */
+        /* STREAMING_CHUNK:Footer */
         .footer-nav { margin-top: auto; display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; max-width: 400px; padding-bottom: 40px; }
         .nav-buttons { display: flex; gap: 10px; width: 100%; }
         .btn { flex: 1; padding: 15px; border: 1px solid #1a1612; text-decoration: none; color: #1a1612; font-size: 10px; letter-spacing: 2px; text-transform: uppercase; text-align: center; }
         .btn-next { background: #1a1612; color: #ffffff; }
-        .hint { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; margin-top: 10px; }
+        .hint { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; }
     </style>
 </head>
 <body>
@@ -48,13 +39,18 @@
     <div class="title">Dress Code</div>
     <div class="divider"><div class="dot"></div></div>
 
-    <div class="message">
-        Soyez Chics et Harmonisés — nous publierons les photos 📸 😊
-    </div>
+    <div class="content-wrapper">
+        <!-- Lien visuel avec la page précédente -->
+        <div class="link-visual">Pour compléter nos souvenirs</div>
+        
+        <p class="message">
+            Soyez Chics et Harmonisés — nous publierons les photos
+        </p>
 
-    <div class="avoid-box">
-        <div class="avoid-title">Couleurs à éviter</div>
-        <div class="avoid-color">— Fluo —</div>
+        <div class="avoid-box">
+            <div class="avoid-title">Couleurs à éviter</div>
+            <div class="avoid-color">— Fluo —</div>
+        </div>
     </div>
 
     <div class="footer-nav">
@@ -67,6 +63,3 @@
 
 </body>
 </html>
-```eof
-
-J'ai structuré la `page7.html` pour correspondre à votre maquette avec le bloc "Couleurs à éviter" bien distingué et une typographie épurée. Est-ce que cette disposition vous convient ?
