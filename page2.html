@@ -4,43 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitation de Mariage - Tsiry & Jinny</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        .invitation-container { width: 100%; max-width: 500px; padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
-        .badge-invitation { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; border: 1px solid #bfa36b; padding: 6px 20px; margin-bottom: 40px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; }
+        .page-container { width: 100%; max-width: 500px; text-align: center; }
+        .badge { font-size: 11px; letter-spacing: 5px; text-transform: uppercase; color: #bfa36b; border: 1px solid #bfa36b; padding: 6px 20px; display: inline-block; margin-bottom: 40px; }
         .nom { font-family: 'Great Vibes', cursive; font-size: 52px; color: #bfa36b; line-height: 1; }
         .esperluette { font-family: 'Great Vibes', cursive; font-size: 40px; color: #bfa36b; margin: 10px 0; display: block; }
         .sous-titre { font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: #bfa36b; margin: 40px 0; }
-        .texte-verset { font-size: 15px; line-height: 1.8; color: #4a4640; margin-bottom: 20px; padding: 0 10px; }
-        .reference-verset { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #bfa36b; margin-bottom: 40px; }
-        .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
+        .verset { font-size: 15px; line-height: 1.8; color: #4a4640; margin-bottom: 20px; }
+        .pagination { display: flex; justify-content: center; gap: 8px; margin: 40px 0; }
         .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
         .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
-        .btn-nav { background-color: #1a1612; color: #ffffff; padding: 15px 40px; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; text-decoration: none; display: inline-block; margin-bottom: 20px; }
-        .footer-glisser { font-size: 10px; letter-spacing: 3px; text-transform: uppercase; color: #a69f93; }
+        .btn { background-color: #1a1612; color: #ffffff; padding: 15px 40px; font-size: 12px; letter-spacing: 4px; text-transform: uppercase; text-decoration: none; display: inline-block; }
     </style>
 </head>
 <body>
-    <div class="invitation-container">
-        <div class="badge-invitation">Invitation</div>
+    <div class="page-container">
+        <div class="badge">Invitation</div>
         <h1 class="nom">Tsiry</h1>
         <span class="esperluette">&</span>
         <h1 class="nom">Jinny</h1>
         <p class="sous-titre">Nous vous convions à notre célébration</p>
-        <p class="texte-verset">« L'amour est patient, l'amour est serviable. Il n'est ni envieux, ni porté à l'orgueil. Il ne se vante pas, ne se gonfle pas d'orgueil, ne fait rien d'inconvenant, ne cherche pas son intérêt, ne s'irrite pas, ne garde pas souvenir du mal... »</p>
-        <p class="reference-verset">1 Corinthiens 13, 4-7</p>
-        <div class="pagination">
-            <div class="dot active"></div><div class="dot"></div>
-        </div>
-        <a href="page2.html" class="btn-nav">Suivant →</a>
-        <p class="footer-glisser">Appuyez pour continuer</p>
+        <p class="verset">« L'amour est patient, l'amour est serviable... Il ne cherche pas son intérêt, ne s'irrite pas. »</p>
+        <div class="pagination"><div class="dot active"></div><div class="dot"></div></div>
+        <a href="page2.html" class="btn">Suivant →</a>
     </div>
 </body>
 </html>
 ```eof
 
+### 2. Fichier `page2.html`
 ```html:page2.html
 <!DOCTYPE html>
 <html lang="fr">
@@ -48,29 +43,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invitation de Mariage - Familles</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
     <style>
-        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-        body, html { height: 100%; font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; align-items: center; justify-content: center; min-height: 100vh; }
-        .invitation-container { width: 100%; max-width: 500px; padding: 40px 20px; text-align: center; display: flex; flex-direction: column; align-items: center; }
-        
-        .familles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; width: 100%; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Josefin Sans', sans-serif; background-color: #ffffff; color: #1a1612; display: flex; justify-content: center; align-items: center; min-height: 100vh; padding: 40px 20px; }
+        .page-container { width: 100%; max-width: 500px; text-align: center; }
+        .familles-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
         .cote-titre { font-size: 11px; letter-spacing: 5px; color: #bfa36b; text-transform: uppercase; margin-bottom: 20px; }
-        .nom-ligne { margin-bottom: 8px; font-size: 13px; color: #1a1612; }
-        
-        .invitation-texte { font-size: 14px; line-height: 1.6; color: #1a1612; margin-bottom: 30px; padding: 0 10px; }
-        .noms-mariage { font-family: 'Great Vibes', cursive; font-size: 42px; color: #bfa36b; margin-top: 10px; }
-        
+        .nom-ligne { margin-bottom: 8px; font-size: 13px; }
+        .invitation-texte { font-size: 14px; line-height: 1.6; margin-bottom: 30px; }
+        .noms-mariage { font-family: 'Great Vibes', cursive; font-size: 42px; color: #bfa36b; margin-bottom: 40px; }
         .pagination { display: flex; justify-content: center; gap: 8px; margin-bottom: 40px; }
         .dot { width: 6px; height: 6px; background-color: #dcd6c6; border-radius: 50%; }
         .dot.active { width: 22px; background-color: #bfa36b; border-radius: 4px; }
-        
-        .nav-group { display: flex; gap: 10px; margin-bottom: 20px; }
-        .btn-nav { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; display: inline-block; }
+        .nav-group { display: flex; gap: 10px; justify-content: center; }
+        .btn { background-color: #1a1612; color: #ffffff; padding: 15px 25px; font-size: 11px; letter-spacing: 3px; text-transform: uppercase; text-decoration: none; display: inline-block; }
     </style>
 </head>
 <body>
-    <div class="invitation-container">
+    <div class="page-container">
         <div class="familles-grid">
             <div class="famille-col">
                 <p class="cote-titre">Côté Marié</p>
@@ -88,14 +79,12 @@
                 <div class="nom-ligne">Sidonie</div>
             </div>
         </div>
-        <p class="invitation-texte">Ont l'honneur de vous inviter à la bénédiction par le mariage religieux de leurs enfants et petits-enfants,</p>
+        <p class="invitation-texte">Ont l'honneur de vous inviter à la bénédiction de leurs enfants,</p>
         <div class="noms-mariage">Tsiry & Jinny</div>
-        <div class="pagination" style="margin-top:40px;">
-            <div class="dot"></div><div class="dot active"></div>
-        </div>
+        <div class="pagination"><div class="dot"></div><div class="dot active"></div></div>
         <div class="nav-group">
-            <a href="index.html" class="btn-nav">← Précédent</a>
-            <a href="#" class="btn-nav">Suivant →</a>
+            <a href="index.html" class="btn">← Précédent</a>
+            <a href="#" class="btn" style="opacity: 0.5; pointer-events: none;">Suivant →</a>
         </div>
     </div>
 </body>
